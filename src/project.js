@@ -1608,7 +1608,7 @@ window.__require = function e(t, n, o) {
           i.default.playerTouch && null != a.default.Instance.targetFruit && 1 == this.touchNum && (this.touchNum = 0, a.default.Instance.targetFruit.getComponent(cc.PhysicsCircleCollider).radius = a.default.Instance.targetFruit.height / 2, a.default.Instance.targetFruit.getComponent(cc.PhysicsCircleCollider).apply(), a.default.Instance.targetFruit.getComponent(cc.RigidBody).active = true,a.default.Instance.targetFruit.getComponent(cc.RigidBody).type = cc.RigidBodyType.Dynamic, a.default.Instance.targetFruit.getComponent(cc.RigidBody).linearVelocity = cc.v2(0, -800), a.default.Instance.targetFruit = null,
             // 生成指定水果
             this.scheduleOnce(function () {
-              if (setFruits) {
+              /* if (setFruits) {
                 let {startFruits} =  setFruits;
                 i.default.GameUpdateCtrl && (startFruits.length > t.createFruitCount ?
                   (a.default.Instance.createOneFruit(startFruits[t.createFruitCount]), t.createFruitCount++) :
@@ -1623,7 +1623,22 @@ window.__require = function e(t, n, o) {
                   t.createFruitCount++) : t.createFruitCount > 5 &&
                   (a.default.Instance.createOneFruit(s.default.RandomInteger(0, 5)),
                     t.createFruitCount++))
-              }
+                  
+              } */
+              i.default.GameUpdateCtrl && (0 == t.createFruitCount ? (a.default.Instance.createOneFruit(0),
+                  t.createFruitCount++) : 1 == t.createFruitCount ? (a.default.Instance.createOneFruit(1),
+                  t.createFruitCount++) : 2 == t.createFruitCount ? (a.default.Instance.createOneFruit(2),
+                  t.createFruitCount++) : 3 == t.createFruitCount ? (a.default.Instance.createOneFruit(3),
+                  t.createFruitCount++) : 4 == t.createFruitCount ? (a.default.Instance.createOneFruit(4),
+                  t.createFruitCount++) : 5 == t.createFruitCount ? (a.default.Instance.createOneFruit(5),
+                  t.createFruitCount++) : 6 == t.createFruitCount ? (a.default.Instance.createOneFruit(6),
+                  t.createFruitCount++) : 7 == t.createFruitCount ? (a.default.Instance.createOneFruit(7),
+                  t.createFruitCount++) : 8 == t.createFruitCount ? (a.default.Instance.createOneFruit(8),
+                  t.createFruitCount++) : 9 == t.createFruitCount ? (a.default.Instance.createOneFruit(9),
+                  t.createFruitCount++) : 10 == t.createFruitCount ? (a.default.Instance.createOneFruit(9),
+                  t.createFruitCount++) :  
+                  (a.default.Instance.createOneFruit(s.default.RandomInteger(0, 9)),
+                    t.createFruitCount++))
             }, .5))
         }, t.prototype.closeTouch = function () {
           this.node.off(cc.Node.EventType.TOUCH_START, this.onTouchStart, this), this.node.off(cc.Node.EventType.TOUCH_MOVE, this.onTouchMove, this), this.node.off(cc.Node.EventType.TOUCH_END, this.onTouchEnd, this), this.node.off(cc.Node.EventType.TOUCH_CANCEL, this.onTouchEnd, this)
