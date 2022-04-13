@@ -1612,7 +1612,7 @@ window.__require = function e(t, n, o) {
                 let {startFruits} =  setFruits;
                 i.default.GameUpdateCtrl && (startFruits.length > t.createFruitCount ?
                   (a.default.Instance.createOneFruit(startFruits[t.createFruitCount]), t.createFruitCount++) :
-                  (a.default.Instance.createOneFruit(setFruits.randomFunction()), t.createFruitCount++))
+                  (a.default.Instance.createOneFruit(s.default.RandomInteger(0, 4)), t.createFruitCount++))
               } else {
                 i.default.GameUpdateCtrl && (0 == t.createFruitCount ? (a.default.Instance.createOneFruit(0),
                   t.createFruitCount++) : 1 == t.createFruitCount ? (a.default.Instance.createOneFruit(0),
