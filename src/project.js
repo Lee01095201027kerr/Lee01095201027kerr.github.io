@@ -1630,14 +1630,8 @@ window.__require = function e(t, n, o) {
                   t.createFruitCount++) : 2 == t.createFruitCount ? (a.default.Instance.createOneFruit(2),
                   t.createFruitCount++) : 3 == t.createFruitCount ? (a.default.Instance.createOneFruit(3),
                   t.createFruitCount++) : 4 == t.createFruitCount ? (a.default.Instance.createOneFruit(4),
-                  t.createFruitCount++) : 5 == t.createFruitCount ? (a.default.Instance.createOneFruit(5),
-                  t.createFruitCount++) : 6 == t.createFruitCount ? (a.default.Instance.createOneFruit(6),
-                  t.createFruitCount++) : 7 == t.createFruitCount ? (a.default.Instance.createOneFruit(7),
-                  t.createFruitCount++) : 8 == t.createFruitCount ? (a.default.Instance.createOneFruit(8),
-                  t.createFruitCount++) : 9 == t.createFruitCount ? (a.default.Instance.createOneFruit(9),
-                  t.createFruitCount++) : 10 == t.createFruitCount ? (a.default.Instance.createOneFruit(9),
-                  t.createFruitCount++) :  
-                  (a.default.Instance.createOneFruit(s.default.RandomInteger(0, 9)),
+                  t.createFruitCount++) : 
+                  (a.default.Instance.createOneFruit(s.default.RandomInteger(0, 7)),
                     t.createFruitCount++))
             }, .5))
         }, t.prototype.closeTouch = function () {
