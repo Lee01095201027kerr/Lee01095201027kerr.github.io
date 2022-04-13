@@ -19,7 +19,7 @@ const minRandomFruitNum = reverseLevelUp ? 6 : 0; // 生成随机水果最小值
 const maxRandomFruitNum = reverseLevelUp ? 11 : 4; // 生成随机水果最大值（1-11）0 为葡萄，9 为半个西瓜
 let setFruits = {
   // 指定前几次生成的水果，可填入任意数量的数字，0 为葡萄，9 为半个西瓜
-  startFruits: reverseLevelUp ? [10, 10, 9, 8, 8, 7] : [0],
+  startFruits: reverseLevelUp ? [10, 10, 9, 8, 8, 7] : [0, 1],
   randomFunction: () => {
     return minRandomFruitNum + Math.floor(Math.random() * (maxRandomFruitNum - minRandomFruitNum));
   }
@@ -29,7 +29,7 @@ let setFruits = {
 let fruitQTan = 0.2;
 
 // 让水果下落缓慢：false 改为大于 0 的任意数，值越大阻力越大，下落越慢（推荐 5）
-let fruitSlowDown = 1;
+let fruitSlowDown = false;
 
 // 点击右上方图标更换水果：false 改为 true 即可
 let clickChangeFruit = true;
